@@ -44,9 +44,10 @@ nav li{
     max-width: 554px;
 }
 .banner-title{
-    font-size: 52px;
+    font-size: 45px;
     font-weight: 700;
     margin-bottom: 16px;
+    color: #3A3A3A;
     
 }
 .banner-description{
@@ -62,17 +63,17 @@ nav li{
     background-color: #E02C6D;
     border: none;
 }
-.banner-backimg {
+ .banner-backimg {
     position: relative;
     width: 435px;
     height: 435px;
-    left: 70px;
+    left: 50px;
 }
 .banner-img{
-    width: 400px;
-    height: 374px;
+    width: 376px;
+    height: 350px;
     position: absolute;
-  right: 115px;
+    right: 150px;
 }
 
 /* header part ends */
@@ -85,30 +86,35 @@ main{
 
  /*sponsor section */
  .sponsors-container{
-    margin: 50px 0;
-   align-items: center;
+    margin: 50px 30px;
+   text-align: center;
 }
 .sponsors-img{
-   margin: 25px 20px;
+   margin: 30px 15px;
 }
 
 /* collection section */
-.collection-title{
-    margin: 30px 350px 30px 350px;
+.collection-title {
+    margin: 50px 300px 50px 300px;
     font-size: 28px;
-    font-weight: 600;  
+    font-weight: 600;
     color: #3A3A3A;
+    text-align: center;
 }
 .img-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: end;
-    
+    grid-template-columns: repeat(3, 1fr);
+}
+.img-container p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
 }
 .card{
+    margin-right: 20px;
     padding: 14px 20px;
-    box-shadow: 5px 5px 5px  rgba(0,0,0,0.2);
-    margin-bottom: 30px;
+    box-shadow: 2px 2px 11px 5px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
 }
 .img-title{
     font-size: 28;
@@ -125,14 +131,17 @@ main{
 
 }
 .collection-img{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
+.collection-btn{
+    text-align: end;
+}
 .see-more{
+    margin-top: 35px;
     color: #E02C6D;
     background-color: #FFFFFF;
     border: none;
-   text-align: right;
 }
 /* featured part */
 .featured-container{
@@ -141,10 +150,6 @@ main{
     gap: 96px;
     margin: 100px 0;
 }
-.featured-img{
-    width: 100%;
-}
-
 .featured-title{
     font-size: 30px;
     font-weight: 700;
@@ -152,11 +157,10 @@ main{
 }
 .featured-button{
     margin-top: 26px;
-    padding: 10px 24px;
+    padding: 12px 24px;
     background-color: #E02C6D;
     color: #FFFFFF;
     border: none;
-
 }
 /* main section ends */
 
@@ -192,10 +196,95 @@ main{
  @media screen and (max-width:576px) {
     header{
         padding: 20px;
+
     }
-    nav{
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .banner-backimg{
+        width: 257px;
+        height: 257px;
+        bottom: 60px;
+        left: 2px;
+    }
+    .banner-img{
+        width: 202px;
+        height: 190px;
+        top: 200px;
+        right: 90px;
+    }
+
+    nav 
+    {
         flex-direction: column;
     }
+    .sponsors-container{
+        text-align: center;
+        margin:0 0 30px 0; 
+    }
+    .sponsors-img{
+        margin: 10px;
+        width: 17%;
+
+    }
+    .collection-title{
+        font-size: 20px;
+        font-weight: 600;
+        margin: 15px 60px 15px 60px;
+    }
+    .card{
+        margin: 12px 0;
+    }
+    .collection-btn{
+        width: 100%;
+        text-align: end;
+    }
+    .see-more{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .img-title{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .money{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .img-container p {
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+    .featured-container 
+    { 
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 0;
+        gap: 30px;
+    }
+    .featured-title {
+        margin-top: 50px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .featured-img img{
+        width: 100%;
+    }
+    nav li{
+        margin: 28px 6px;
+    }
+  .img-container{
+    grid-template-columns: 1fr;
  }
+}
     
  
